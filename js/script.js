@@ -1,14 +1,12 @@
-const faqListEl = document.querySelector('.faq__list');
+const faqListEl = document.querySelector(".faq__list");
 
-faqListEl.addEventListener('click', e => {
-    e.preventDefault();
+faqListEl.addEventListener("click", (e) => {
+  e.preventDefault();
 
-    console.log(e.target);
+  const btn = e.target.closest(".faq__question-btn");
 
-    const btn = e.target.closest('.faq__question-btn');
+  if (!btn) return;
 
-    if (!btn) return;
-
-    const listItemEl = btn.closest('.faq__list-item');
-    listItemEl.classList.toggle('faq__list-item--collapse');
+  const listItemEl = btn.closest(".faq__list-item");
+  listItemEl.classList.toggle("faq__list-item--collapse");
 });

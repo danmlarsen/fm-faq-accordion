@@ -26,4 +26,8 @@ p {
 h1 {
   font-size: $fs-800;
   color: $color-dark-purple;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: $fs-900;
+  }
 }
