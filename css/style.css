@@ -108,15 +108,20 @@ h1 {
 .faq__list-item:not(.faq__list-item--collapse) .faq__question-toggle-icon--plus {
   opacity: 0;
 }
-.faq__question-container {
+.faq__question-icon-container {
+  position: relative;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+.faq__question-btn {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr auto;
   gap: 2rem;
   align-items: center;
   justify-items: start;
   margin: 2rem 0;
-}
-.faq__question {
   font-size: 1.6rem;
   font-weight: 600;
   color: hsl(292, 42%, 14%);
@@ -125,19 +130,13 @@ h1 {
   text-decoration: none;
   text-align: left;
 }
-.faq__question:hover, .faq__question:focus, .faq__question:active {
+.faq__question-btn:hover, .faq__question-btn:focus, .faq__question-btn:active {
   color: #71327b;
 }
 .faq__answer {
   margin-bottom: 2rem;
   letter-spacing: -1px;
   transition: all 0.2s ease-in-out;
-}
-.faq__question-toggle-btn {
-  position: relative;
-  width: 3.2rem;
-  height: 3.2rem;
-  cursor: pointer;
 }
 .faq__question-toggle-icon {
   position: absolute;
