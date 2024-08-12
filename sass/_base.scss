@@ -1,31 +1,33 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: url('../assets/images/background-pattern-mobile.svg') no-repeat, $color-light-pink;
-    background-position: top;
-    background-size: contain;
+  background: url("../assets/images/background-pattern-mobile.svg") no-repeat,
+    $color-light-pink;
+  background-position: top;
+  background-size: contain;
 
-    min-height: 100vh;
-    padding: 20rem 3.2rem 3.2rem;
+  min-height: 100vh;
+  padding: 12rem 2rem 3.2rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: start;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 
-    @media screen and (min-width: 48em) {
-        background: url('../assets/images/background-pattern-desktop.svg') no-repeat, $color-light-pink;
-    }
+  @media screen and (min-width: 48em) {
+    background: url("../assets/images/background-pattern-desktop.svg") no-repeat,
+      $color-light-pink;
+  }
 }
 
 img,
@@ -33,22 +35,22 @@ picture,
 svg,
 video,
 canvas {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 input,
 textarea,
 button,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 ul[class] {
-    list-style: none;
+  list-style: none;
 }
 
 button {
-    border: none;
-    background: none;
+  border: none;
+  background: none;
 }
