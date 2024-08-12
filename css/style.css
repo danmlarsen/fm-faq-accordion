@@ -12,7 +12,7 @@ html {
 }
 @media screen and (min-width: 48em) {
   html {
-    font-size: 80%;
+    font-size: 75%;
   }
 }
 
@@ -21,7 +21,7 @@ body {
   background-position: top;
   background-size: contain;
   min-height: 100vh;
-  padding: 20vh 2rem 2rem;
+  padding: 15vh 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -101,7 +101,6 @@ h1 {
 @media screen and (min-width: 48em) {
   .faq {
     padding: 3rem 3rem 1rem;
-    max-width: 54rem;
     border-radius: 19px;
   }
 }
@@ -149,7 +148,7 @@ h1 {
   border: none;
   background: none;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: hsl(292, 42%, 14%);
   line-height: 1.2;
   cursor: pointer;
