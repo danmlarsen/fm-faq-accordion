@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 80%;
+  }
+}
 
 body {
   background: url("../assets/images/background-pattern-mobile.svg") no-repeat, hsl(275, 100%, 97%);
@@ -59,8 +64,13 @@ ul[class] {
 }
 body {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.4;
+}
+@media screen and (min-width: 48em) {
+  body {
+    font-size: 1.5rem;
+  }
 }
 
 h1,
@@ -82,14 +92,22 @@ h1 {
 
 .faq {
   background-color: hsl(0, 0%, 100%);
-  padding: 2rem;
-  border-radius: 9px;
+  padding: 2.6rem;
   color: hsl(292, 16%, 49%);
   max-width: 50rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+}
+@media screen and (min-width: 48em) {
+  .faq {
+    padding: 3rem 3rem 1rem;
+    max-width: 54rem;
+    border-radius: 19px;
+  }
 }
 .faq__header {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
 }
 .faq__icon {
   width: 2.6rem;
@@ -130,8 +148,8 @@ h1 {
   margin: 2rem 0;
   border: none;
   background: none;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: hsl(292, 42%, 14%);
   line-height: 1.2;
   cursor: pointer;
@@ -147,7 +165,6 @@ h1 {
 }
 .faq__answer {
   margin-bottom: 2rem;
-  letter-spacing: -1px;
   transition: all 0.2s ease-in-out;
 }
 .faq__question-toggle-icon {
